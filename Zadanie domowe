@@ -1,0 +1,9 @@
+tic
+[N K]=size(dane);
+A=ones(N,3);
+A(:,2)=dane(:,1);
+A(:,3)=1./dane(:,1);
+C=dane(:,2);
+B=A\C;
+disp(B)
+toc
