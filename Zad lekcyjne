@@ -1,0 +1,11 @@
+A = magic(3)
+
+sum(diag(A)) 
+sum(diag(A.')) 
+sum(A)
+ B=A(:,end)
+ A(:,end)= A(:,1)
+ A(:,1)= B
+ sum(diag(A)) 
+sum(diag(A.')) 
+sum(A)
